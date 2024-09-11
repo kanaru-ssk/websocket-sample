@@ -2,7 +2,7 @@ import { HocuspocusProvider } from "@hocuspocus/provider";
 
 // Connect it to the backend
 const provider = new HocuspocusProvider({
-  url: process.env.COLLABORATION_URL || "ws://127.0.0.1:1234",
+  url: process.env.COLLABORATION_URL || "ws://localhost:8080/api/collaboration",
   name: "example-document",
 });
 
@@ -11,6 +11,7 @@ const tasks = provider.document.getArray("tasks");
 
 // Listen for changes
 tasks.observe(() => {
+  console.log(tasks);
   console.log("tasks were modified");
 });
 
