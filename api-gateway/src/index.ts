@@ -1,4 +1,4 @@
-import { createProxyMiddleware, Options } from "http-proxy-middleware";
+import { createProxyMiddleware } from "http-proxy-middleware";
 import express from "express";
 import http from "http";
 
