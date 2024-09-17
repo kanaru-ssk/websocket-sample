@@ -2,7 +2,7 @@ import { HocuspocusProvider } from "@hocuspocus/provider";
 
 // Connect it to the backend
 const provider = new HocuspocusProvider({
-  url: process.env.COLLABORATION_URL || "ws://localhost:8080/api/collaboration",
+  url: "wss://websocket-sample-collaboration-641862643887.us-central1.run.app/api/collaboration",
   name: "example-document",
 });
 

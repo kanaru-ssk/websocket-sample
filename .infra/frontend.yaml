@@ -11,6 +11,6 @@ spec:
         - image: us-central1-docker.pkg.dev/velvety-glazing-420809/websocket-sample-repo/websocket-sample-frontend:latest
           env:
             - name: COLLABORATION_URL
-              value: wss://websocket-sample-api-gateway-641862643887.us-central1.run.app/api/collaboration
+              value: ws://websocket-sample-api-gateway-641862643887.us-central1.run.app/api/collaboration
           ports:
             - containerPort: 80
