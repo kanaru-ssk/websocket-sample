@@ -6,7 +6,12 @@ metadata:
     run.googleapis.com/ingress: all
 spec:
   template:
+    metadata:
+      annotations:
+        run.googleapis.com/vpc-access-egress: all-traffic
+        run.googleapis.com/network-interfaces: '[{"network":"websocket-sample-vpc","subnetwork":"websocket-sample-subnet"}]'
     spec:
+      serviceAccountName: websocket-sample-api-gateway@velvety-glazing-420809.iam.gserviceaccount.com
       containers:
         - image: us-central1-docker.pkg.dev/velvety-glazing-420809/websocket-sample-repo/websocket-sample-api-gateway:latest
           env:
