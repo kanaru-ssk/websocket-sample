@@ -7,7 +7,7 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@hocuspocus/server": "^2.13.5"
+    "@hocuspocus/server": "1.0.0-beta.6"
   },
   "devDependencies": {
     "@types/async-lock": "^1.4.2",
