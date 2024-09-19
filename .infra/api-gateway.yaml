@@ -16,4 +16,4 @@ spec:
         - image: us-central1-docker.pkg.dev/velvety-glazing-420809/websocket-sample-repo/websocket-sample-api-gateway:latest
           env:
             - name: COLLABORATION_URL
-              value: ws://websocket-sample-collaboration-641862643887.us-central1.run.app
+              value: wss://websocket-sample-collaboration-641862643887.us-central1.run.app
